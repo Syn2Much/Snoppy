@@ -1,0 +1,5 @@
+requests[socks]>=2.31
+cryptography>=42
+dnspython>=2.6
+ipwhois>=1.2
+beautifulsoup4>=4.12
