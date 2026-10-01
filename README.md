@@ -83,9 +83,3 @@ Most tools offer an optional JSON output path. Results are merged by target usin
 ```
 
 The output helper creates parent directories when needed. Choose a path you can write to and keep generated results out of public commits if they contain sensitive target information.
-
-## Safe use and limitations
-
-Only assess hosts and networks you own or have explicit permission to test. You are responsible for choosing an appropriate scope, request rate, and concurrency for each target. Directory checks include common sensitive paths such as `.env` and `.git/HEAD`; use them only within authorized scope.
-
-The DNS posture check tries a short list of common DKIM selectors, so it may not find records using custom selectors. RDAP coverage and contact details depend on the responding registry. The crawler stays on the starting hostname and has a page limit, but it does not replace a full browser or accessibility audit. TLS inspection intentionally attempts older protocol versions to identify legacy support.
